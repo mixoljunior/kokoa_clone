@@ -51,6 +51,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .message-row img {
@@ -58,6 +59,24 @@
   height: 40px;
   border-radius: 15px;
   margin-right: 10px;
+}
+
+.message-row .img-large {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.message-row img:first-child:hover + .img-large {
+  visibility: visible;
+  opacity: 1;
 }
 
 .message__author {
