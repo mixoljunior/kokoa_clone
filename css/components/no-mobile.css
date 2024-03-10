@@ -4,7 +4,7 @@
   height: 100vh;
   width: 100vw;
   background-color: var(--yellow);
-  display: flex;
+  display: none;
   top: 0;
   justify-content: center;
   align-items: center;
@@ -12,8 +12,14 @@
   font-weight: 500;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 601px) {
   #no-mobile {
-    display: none;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  #no-mobile {
+    display: flex;
   }
 }

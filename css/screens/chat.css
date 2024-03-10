@@ -183,8 +183,8 @@
 }
 
 .reply input:focus {
-  width: 98vw;
-  transform: translateX(-12%) translateY(-50px);
+  width: 95vw;
+  transform: translateX(-11%) translateY(-50px);
 }
 
 .reply:focus-within {
